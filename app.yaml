@@ -1,9 +1,11 @@
 services:
-- type: web
-  name: my-fdv-bot
-  env: python
-  buildCommand: pip install -r requirements.txt
-  startCommand: python main.py
-  envVars:
-  - key: 93edc28575ad46194e94f4a5997c5a02
-    sync: false
+  - type: web
+    name: fdv-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      API_ID: '20588411'  # Your API ID
+      API_HASH: '93edc28575ad46194e94f4a5997c5a02'  # Your API Hash
+      TELEGRAM_BOT_TOKEN: '7077890021:AAG-rsFpkYQb8KnKjE6zUspHP6mhFI_sUvM'  # Your Bot Token
+    healthCheckPath: /health

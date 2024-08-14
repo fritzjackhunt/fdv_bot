@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import re
 
 # Replace with your own credentials
+bot_token = '7077890021:AAG-rsFpkYQb8KnKjE6zUspHP6mhFI_sUvM'
 api_id = '20588411'  # Replace with your API ID
 api_hash = '93edc28575ad46194e94f4a5997c5a02'  # Replace with your API Hash
 source_channel_username = '@DSNewPairsSolana'  # Source channel username or ID
