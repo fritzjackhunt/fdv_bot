@@ -1,0 +1,9 @@
+services:
+- type: web
+  name: my-fdv-bot
+  env: python
+  buildCommand: pip install -r requirements.txt
+  startCommand: python main.py
+  envVars:
+  - key: 93edc28575ad46194e94f4a5997c5a02
+    sync: false
